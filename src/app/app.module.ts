@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostAddComponent } from './post-add/post-add.component';
 import { PostViewComponent } from './post-view/post-view.component';
+import { PostNavbarComponent } from './post-navbar/post-navbar.component';
 
 const myRouter: Routes=[
   {
@@ -22,7 +23,8 @@ const myRouter: Routes=[
   declarations: [
     AppComponent,
     PostAddComponent,
-    PostViewComponent
+    PostViewComponent,
+    PostNavbarComponent
   ],
   imports: [
     BrowserModule,
