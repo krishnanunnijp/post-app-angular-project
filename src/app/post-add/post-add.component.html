@@ -8,25 +8,25 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">user id</label>
-                    <input type="text" class="form-control">
+                    <input name="userId" [(ngModel)]="userId" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">id</label>
-                    <input type="text" class="form-control">
+                    <input name="id" [(ngModel)]="id" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">title</label>
-                    <input type="text" class="form-control">
+                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">description</label>
-                    <textarea class="form-control" rows="4"></textarea>
+                    <textarea name="body" [(ngModel)]="body" class="form-control" rows="4"></textarea>
                 </div>
 
 
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <a href="" class="btn btn-primary">Post</a>
+                    <a (click)="addpost()" class="btn btn-primary">Post</a>
                 </div>
             </div>
         </div>
